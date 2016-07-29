@@ -69,8 +69,8 @@ h2, h1 {
   font-size:30px;
 }
 .animate {
-  animation: bday 4s;
-  -webkit-animation: bday 4s;
+  animation: bday 3s;
+  -webkit-animation: bday 3s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
@@ -78,6 +78,16 @@ h2, h1 {
   100% {
     z-index: 8;
     transform: rotateX(45deg) rotateY(-360deg);
+  }
+}
+
+.unRotate {
+  animation: unrotate 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes unrotate {
+  100% {
+    transform: rotateX(0deg);
   }
 }
 /*@-webkit-keyframes bday {
