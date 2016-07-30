@@ -18,11 +18,14 @@
           $("#main").toggleClass("unRotate");
         }, 3000);
       });
-      $("#wishText").hover(function() {
-        $(this).css({"overflow": "auto"});
-      }, function() {
-        $(this).css({"overflow": "hidden"});
-      });
+      if ($(window).width() > 991) {
+        $("#wishText").hover(function() {
+          $(this).css({"overflow": "auto"});
+        }, function() {
+          $(this).css({"overflow": "hidden"});
+        });
+      }
+      else $("#wishText").css({"overflow": "auto"});
     });
   </script>
   <script type="text/javascript" language="javascript">
