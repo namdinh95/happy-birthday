@@ -18,6 +18,11 @@
           $("#main").toggleClass("unRotate");
         }, 3000);
       });
+      $("#wishText").hover(function() {
+        $(this).css({"overflow": "auto"});
+      }, function() {
+        $(this).css({"overflow": "hidden"});
+      });
     });
   </script>
   <script type="text/javascript" language="javascript">
@@ -37,11 +42,14 @@
   <div id="page">
     <div id="text">
       <div id="greeting">
-        <img src="img/cat_flower.jpg" width="200" /><h1>Happy Birthday Name<br/>It's 23rd May....<span class="icon-gift"></span></h1>
+        <img src="img/cat_flower.jpg" width="200" />
+        <h1>Happy 21<sup>st</sup> Birthday<br/>to Thảo Phan xD</h1>
       </div><!--Greeting-->
       <br/>
       <hr color="#333" align="right" width="400px" />
-      <h2>I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. Happy Birthday!</h2>
+      <div id="wishText">
+        <h2>Chúc mừng sinh nhật! Như thường lệ thì tuổi mới chúc cậu có sức khoẻ để làm mọi thứ mình muốn và ngày càng đẹp ra :">, trưởng thành hơn. Riêng ở tuổi 21 này thì chắc chắn sẽ là 1 năm đầy biến động khi phải rục rịch chuẩn bị ra trường với nhiều quyết định khó khăn, nên chúc cậu luôn giữ được sự vui tươi, yêu đời và nhiệt huyết để vượt qua mọi trở ngại 💪 <br /> P/s: Tớ thích ảnh cậu chụp nên dùng làm nền luôn :3 Tớ ngồi chế cái này vội trong vài ngày cuối nên có gì sơ xuất xin lượng thứ 🙏</h2>
+      </div>
     </div><!--Text-->
     <a class="icon-circle-left" href="#" onclick='location.reload(true); return false;'></a>
   </div><!--Page-->
