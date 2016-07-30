@@ -2,11 +2,12 @@
 /* CSS Document */
 body {
   margin:0;
-  background: url(../img/bg.jpg) fixed;
+  background: url(../img/bg_blur.jpg) fixed;
   background-size:cover;
   -webkit-background-size:cover;
   color:#333;
-  font-family: 'Bad Script', cursive;
+  /*font-family: 'Bad Script', cursive;*/
+  font-family: 'Sriracha', cursive;
   user-select:none;
   -webkit-user-select:none;
   -moz-user-select:none;
@@ -28,6 +29,7 @@ a:hover {
   text-decoration:none;
 }
 h2, h1 {
+  text-shadow: 1px 1px 1px #fff;
   font-weight:normal;
 }
 :before {
@@ -47,7 +49,7 @@ h2, h1 {
   transform-origin: left;
   width:600px;
   height: 600px;
-  background: url(../img/5.jpg) center;
+  background: url(../img/cover.jpg) center;
   background-size:680px 680px;
   left:50%;
   margin-left:-300px;
@@ -90,26 +92,11 @@ h2, h1 {
     transform: rotateX(0deg);
   }
 }
-/*@-webkit-keyframes bday {
-  50%{
-    left:-100px;
-    z-index:10;
-    }
-  60% {
-    z-index:8;
-  }
-  100%{
-    left: 46%;
-    -webkit-transform:rotate(-3deg) scale(0.9,0.9);
-      -webkit-backface-visibility: hidden;
-    z-index:8;
-  }
-}*/
 #page{
   transform: rotateX(45deg);
   width:600px;
   height: 600px;
-  background: url(../img/text.jpg);
+  background: url(../img/page_cover.jpg);
   left:50%;
   margin-left:-300px;
   top:10px;
