@@ -109,6 +109,11 @@ h2, h1 {
 #page a:before {
   color: #333;
 }
+img#mute {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
 #text {
   width:auto;
   margin:20px;

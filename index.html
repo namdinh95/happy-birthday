@@ -8,26 +8,7 @@
   <link rel="stylesheet" type="text/css" href="fonts.css"/>
   <link href='https://fonts.googleapis.com/css?family=Sriracha&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("#main").click(function(){
-        $("#main").toggleClass("animate");
-        setTimeout(function() {
-          $("#main").css({"z-index": "1"});
-          $("#page").toggleClass("unRotate");
-          $("#main").toggleClass("unRotate");
-        }, 3000);
-      });
-      if ($(window).width() > 991) {
-        $("#wishText").hover(function() {
-          $(this).css({"overflow": "auto"});
-        }, function() {
-          $(this).css({"overflow": "hidden"});
-        });
-      }
-      else $("#wishText").css({"overflow": "auto"});
-    });
-  </script>
+  <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" language="javascript">
     function loading()
     {
@@ -35,14 +16,18 @@
     }
     window.onload = loading;
   </script>
-  <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'/>
+ <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'/>
 </head>
 
 <body>
+  <audio id="sound" autoplay>
+    <source src="sound/happy-birthday.mp3" type="audio/mpeg">
+  </audio>
   <div id="main">
     <a id="flip" class="icon-circle-right" href="#"></a>
   </div><!--Main-->
   <div id="page">
+    <img id="mute" src="img/mute.png" width="20" />
     <div id="text">
       <div id="greeting">
         <img src="img/cat_flower.jpg" width="200" />
